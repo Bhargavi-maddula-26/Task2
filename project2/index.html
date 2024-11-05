@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online Cake Ordering</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Online Cake Ordering</h1>
+        <nav>
+            <ul>
+                <li><a href="#cakeMenu">Cake Menu</a></li>
+                <li><a href="#gallery">Cake Gallery</a></li>
+                <li><a href="#order">Order Cake</a></li>
+
+
+            </ul>
+        </nav>
+    </header>
+
+    <section id="intro">
+        <div class="intro-text">
+            <h2>Welcome to Cake Delights!</h2>
+            <p>Discover a world of delightful flavors and custom-designed cakes perfect for every occasion. Order your dream cake with ease and have it delivered right to your doorstep!</p>
+            <p>"Crafted with love, baked to perfection – discover a cake as unique as your celebration."</p>
+            <!-- Image Carousel -->
+            <div class="carousel">
+                <div class="carousel-images">
+                    <img src="images/cake.jpg" alt="Cake Display 1">
+                    <img src="images/cake1.jpg" alt="Cake Display 2">
+                    <img src="images/cake2.jpg" alt="Cake Display 3">
+                    <img src="images/cream.jpg" alt="Cake Display 3">
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="cakeMenu">
+        <h2>Cake Menu</h2>
+        <div class="cake-grid">
+            <div class="cake-item">
+                <img src="images/chocolate.jpg" alt="Chocolate Cake">
+                <p>Chocolate Cake</p>
+            </div>
+            <div class="cake-item">
+                <img src="images/vanilla.jpg"alt="Vanilla Cake">
+                <p>Vanilla Cake</p>
+            </div>
+            <div class="cake-item">
+                <img src="images/red velvet.jpg" alt="Red Velvet Cake">
+                <p>Red Velvet Cake</p>
+            </div>
+            <div class="cake-item">
+                <img src="images/fruit.jpg" alt="Fruit Cake">
+                <p>Fruit Cake</p>
+            </div>
+            <div class="cake-item">
+                <img src="images/cheesecake.jpg" alt="Cheesecake">
+                <p>Cheese cake</p>
+            </div>
+            <div class="cake-item">
+                <img src="images/Butterscotch cake.jpg" alt="Butterscotchcake">
+                <p>Butterscotch cake</p>
+            </div>
+            <div class="cake-item">
+                <img src="images/black forest cake.jpg" alt="Blackforestcake">
+                <p>Blackforestcake</p>
+            </div>
+            <div class="cake-item">
+                <img src="images/pineapple cake.jpg" alt="pineapplecake">
+                <p>Pineapple cake</p>
+            </div>
+            <div class="cake-item">
+                <img src="images/icecream cake.jpg" alt="icecreamcake">
+                <p>icecream cake</p>
+            </div>
+            <div class="cake-item">
+                <img src="images/cupcakes.jpg" alt="cupcakes">
+                <p>cup cakes</p>
+            </div>
+            <div class="cake-item">
+                <img src="images/coconut cake.jpg" alt="coconutcake">
+                <p>coconut cake</p>
+            </div>
+            <div class="cake-item">
+                <img src="images/Confetticake.jpg" alt="Confetticake ">
+                <p>Confetti cake </p>
+            </div>
+        </div>
+    </section>
+    <section id="gallery">
+        <h2>Cake Gallery</h2>
+        <p>"Couldn't find the cake you were looking for? Let us know! We're here to make your celebration sweeter with custom options just for you."
+        <p>"Place the cake of your choice."</p>
+        </p>
+        <div id="cakeImages">
+            <div class="cake-image" style="background-image: url('https://images.unsplash.com/photo-1552424903-8b6d5a8b18a5');" title="Chocolate Cake"></div>
+            <div class="cake-image" style="background-image: url('https://images.unsplash.com/photo-1587434398606-ef6e244d3d0a');" title="Vanilla Cake"></div>
+            <div class="cake-image" style="background-image: url('https://images.unsplash.com/photo-1603291521767-1f785f08a066');" title="Red Velvet Cake"></div>
+            <div class="cake-image" style="background-image: url('https://images.unsplash.com/photo-1609057396434-40e75f1c91f3');" title="Fruit Cake"></div>
+        </div>
+        <input type="text" id="imageUrl" placeholder="Add Image URL">
+        <button id="addImage">Add Image</button>
+    </section>
+    <section id="order">
+        <h2>Order Your Cake</h2>
+        <form id="cakeForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required pattern="[A-Za-z\s.]+" title="Please enter only letters.">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" placeholder="Enter your phone number" required pattern="[0-9]{10}" title="Please enter a 10-digit phone number.">
+            <label for="address">Address:</label>
+            <input type="text" id="address" name="address" placeholder="Enter your address" required pattern="[A-Za-z0-9\s,.-]+" maxlength="100" title="Please enter a valid address (letters, numbers, commas, periods, and hyphens are allowed).">
+            <label for="cakeType">Cake Type:</label>
+            <select id="cakeType" required>
+                <option value="">Select a type</option>
+                <option value="Chocolate">Chocolate</option>
+                <option value="Vanilla">Vanilla</option>
+                <option value="Red Velvet">Red Velvet</option>
+                <option value="Fruit Cake">Fruit Cake</option>
+                <option value="Cheesecake">Cheesecake</option>
+                <option value="Butterscotchcake">Butterscotchcake</option>
+                <option value="pineapplecake">pineapplecake</option>
+                <option value="Blackforestcake">Blackforestcake</option>
+                <option value="icecreamcake">icecreamcake</option>
+                <option value="cupcakes">cupcakes</option>
+                <option value="coconutcake">coconutcake</option>
+                <option value="Confetticake">Confetticake</option>
+            </select>
+            <label for="message">Special Requests:</label>
+            <textarea id="message" placeholder="Any special requests?"></textarea>
+            <button type="submit">Order Cake</button>
+        </form>
+        <div id="orderConfirmation"></div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
